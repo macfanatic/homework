@@ -13,7 +13,7 @@ class DetermineUserAccessForOrganization
   def access_symbol
     ensure_user_and_organization_provided
 
-    if user.organization == organization
+    if organization.users.include? user
       user_role.role
     else
       :denied

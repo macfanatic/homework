@@ -1,8 +1,7 @@
 class User
-  include Virtus.model(finalize: false)
+  include Virtus.model
 
   attribute :name, String
-  attribute :organization, 'Organization'
 
   def admin_for?(organization)
     service_for(organization).admin?

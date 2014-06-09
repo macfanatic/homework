@@ -5,7 +5,6 @@ class Organization
   attribute :user_roles, Array['UserRole']
 
   def add_user(user, role)
-    user.organization = self
     user_roles << UserRole.new(user: user, organization: self, role: role)
   end
 

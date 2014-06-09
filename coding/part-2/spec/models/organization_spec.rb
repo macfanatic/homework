@@ -31,12 +31,6 @@ describe Organization do
         subject.add_user user, :user
       end.to change(subject.user_roles, :count).by(1)
     end
-
-    it "sets the #organization on the User instance" do
-      expect do
-        subject.add_user user, :user
-      end.to change { user.organization }.from(nil).to(subject)
-    end
   end
 
 end

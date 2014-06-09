@@ -3,7 +3,7 @@ class UserRole
 
   ROLES = %i(admin user denied)
 
-  attribute :user, 'User'
+  attribute :user, User
   attribute :organization, 'Organization'
   attribute :role, Symbol, default: :user
 
