@@ -2,7 +2,13 @@
 
 Developed classes & tests to represent problem mentioned [here](http://www.adomokos.com/2012/10/the-organizations-users-roles-kata.html).
 
-## Usage
+### Installation
+
+```
+bundle install
+```
+
+### Usage
 
 You simply ask a user if he has access or is denied to an organization.  The logic for organization inheritenance and user permissions is abstracted away in services.
 
